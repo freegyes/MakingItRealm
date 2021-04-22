@@ -1,0 +1,49 @@
+/* Typography */
+
+.heading,
+.footer {
+    text-align: center;
+}
+
+.small-print {
+    font-size: 75%;
+}
+
+.justify-right {
+    text-align: right;
+}
+
+/* Design components */
+
+.framed {
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #eee;
+}
+
+.section:not(:last-of-type),
+.gallery > .container > .row:not(:last-of-type) {
+    border-bottom: 1px solid #e1e1e1;
+}
+
+/* Layout */
+
+.heading,
+.footer,
+.gallery > .container > .row {
+    margin-top: 2.5rem;
+}
+
+.gallery > .container > .row {
+    padding-bottom: 2.5rem;
+}
+
+
+/* Bigger than 550 */
+@media (min-width: 550px) {}
+
+/* Bigger than 750 */
+@media (min-width: 750px) {}
+  
+/* Bigger than 1000 */
+@media (min-width: 1000px) {}
