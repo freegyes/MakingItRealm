@@ -26,16 +26,28 @@
     border-bottom: 1px solid #e1e1e1;
 }
 
+.about {
+    background-color: #eee;
+}
+
+.footer > p > a {
+    text-decoration: none;
+}
+
 /* Layout */
 
 .heading,
-.footer,
+.about,
 .gallery > .container > .row {
-    margin-top: 2.5rem;
+    padding-top: 2rem;
 }
 
 .gallery > .container > .row {
-    padding-bottom: 2.5rem;
+    padding-bottom: 2rem;
+}
+
+.footer > p {
+    margin: 0.75rem;
 }
 
 
