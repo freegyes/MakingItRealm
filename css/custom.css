@@ -21,6 +21,15 @@
     border: 1px solid #eee;
 }
 
+.author-portrait {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.portrait {
+    max-width: 100%;
+}
+
 .section:not(:last-of-type),
 .gallery > .container > .row:not(:last-of-type) {
     border-bottom: 1px solid #e1e1e1;
@@ -48,6 +57,12 @@
 
 .footer > p {
     margin: 0.75rem;
+}
+
+.author-portrait {
+    margin: 0 1rem;
+    width: 100px;
+    height: 100px;
 }
 
 
