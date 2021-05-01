@@ -21,6 +21,15 @@
     border: 1px solid #eee;
 }
 
+.author-portrait {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.portrait {
+    max-height: 100%;
+}
+
 .section:not(:last-of-type),
 .gallery > .container > .row:not(:last-of-type) {
     border-bottom: 1px solid #e1e1e1;
@@ -50,6 +59,12 @@
     margin: 0.75rem;
 }
 
+.author-portrait {
+    margin: 0 1rem;
+    width: 100px;
+    height: 100px;
+}
+
 
 /* Bigger than 550 */
 @media (min-width: 550px) {}
@@ -59,3 +74,11 @@
   
 /* Bigger than 1000 */
 @media (min-width: 1000px) {}
+
+/* For random order */
+
+.js-creation-container {
+    display: flex;
+    flex-direction: column;
+}
+

@@ -3,3 +3,9 @@ _site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
+
+### Mac ###
+**/.DS_Store
+
+### IDE ###
+.idea
