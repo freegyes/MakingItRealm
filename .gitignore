@@ -6,3 +6,6 @@ _site/
 
 ### Mac ###
 **/.DS_Store
+
+### IDE ###
+.idea
