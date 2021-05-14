@@ -1,8 +1,9 @@
 ---
----
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
-<!DOCTYPE html>
-<html lang="en">
+layout: home
+---
 
 <head>
 
@@ -148,24 +149,11 @@
     </div>
   </div>
 
-  <div class="section about">
-    <div class="container">
-      <div class="row">
-        <h3>About the Making It Realm</h3>
-        <p>We create things that did not exist before and find motivation by sharing our creations using this space.
-          <br /> Reach out if you want to join our community of creators.
-        </p>
-      </div>
-    </div>
-  </div>
-
   <div class="section footer small-print">
-    <p><a href="https://github.com/freegyes/MakingItRealm">&lt; &gt;</a> | <a href="mailto:hello@makingitrealm.space">hello@makingitrealm.space</a> | thanks <a href="http://getskeleton.com/">Skeleton</a></p>
+    <p><a href="https://github.com/freegyes/MakingItRealm">&lt; &gt;</a> | <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
   </div>
 
   <script src="/scripts/randomize.js"></script>
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
-
-</html>
