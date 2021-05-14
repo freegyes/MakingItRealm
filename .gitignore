@@ -4,6 +4,8 @@ _site/
 .jekyll-cache/
 .jekyll-metadata
 
-### OS ###
-.DS_Store
-.DS_Store?
+### Mac ###
+**/.DS_Store
+
+### IDE ###
+.idea
