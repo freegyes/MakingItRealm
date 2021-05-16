@@ -7,21 +7,16 @@
 
     {%- include header.html -%}
 
-
-
     <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        <ul>
-          {% for creation in site.creations %}
-            <li>
-              <h2>{{ creation.title }}</h2>
-              {% assign author = site.authors | where:"path", creation.author | first %}
-              {{ author.link }}
-            </li>
-          {% endfor %}
-        </ul>
-        {{ content }}
+      
+      <div class="section heading">
+        <div class="container">
+          <h1>Making It Realm / 2021-04</h1>
+        </div>
       </div>
+
+      {{ content }}
+
     </main>
 
     {%- include footer.html -%}
