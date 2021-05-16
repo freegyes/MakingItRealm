@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  EXHIBITION
+
+  {% assign creations_to_exhibit = site.creations | where:"exhibition", page.issue %}
+
+  {%- for creation in creations_to_exhibit -%}
+  <li>
+    <h3>{{ creation.title }}</h3>
+  </li>
+  {%- endfor -%}  
+
+
+  {{ content }}
+
+
+</div>
