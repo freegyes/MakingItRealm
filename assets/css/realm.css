@@ -5,6 +5,8 @@ body {
     color: #222;
     font-family: 'Work Sans', sans-serif;
     font-weight: 300;
+    font-size: 10px;
+    line-height: 1.2;
 }
 
 /* Typography */
@@ -39,6 +41,12 @@ body {
     font-family: 'Marcellus', serif;
     font-weight: 400;
     text-decoration: underline;
+}
+
+/* Footer */
+
+.footer {
+    border-top: 1px dotted #ccc;
 }
 
 /* Design components */
