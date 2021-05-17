@@ -2,20 +2,38 @@
 layout: default
 ---
 
-<div class="home">
+<div class="pad">
 
-  EXHIBITION
+  <p>Exhibition # {{page.issue}}</p>
+
+  <div class="gallery">
 
   {% assign creations_to_exhibit = site.creations | where:"exhibition", page.issue %}
-
   {%- for creation in creations_to_exhibit -%}
-  <li>
-    <h3>{{ creation.title }}</h3>
-  </li>
-  {%- endfor -%}  
+    {% assign author = site.authors | where:"path", creation.author | first %}
+    <div class="creation js-creation">
+      <a class="frame" href="{{ creation.link }}">
+        <img class="u-max-full-width" 
+          src="{{ creation.image }}" 
+          alt="{{ creation.image_alt }}">
+      </a>
+      <div class="creation__meta">
+        <h2 class="creation__title fancy">{{ creation.title }}</h2>
+        
+        {{ creation.content }}
 
+        <div class="author-portrait u-pull-right">
+          <img class="u-max-full-height"
+            src="{{ author.portrait }}" 
+            alt="A portrait">
+        </div>
+        <p class="creation__author">
+          Made real by 
+          <a class="fancy" href="{{ author.link }}">{{ author.display_name }}</a>.
+        </p>
+      </div>
+    </div>
+  {%- endfor -%}
 
-  {{ content }}
-
-
+  </div>
 </div>

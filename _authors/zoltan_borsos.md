@@ -1,5 +1,5 @@
 ---
-portrait: /images/authors/laszlo_vad.jpg
-display_name: László
-link: https://world.hey.com/laszlo.vad/
+portrait: /images/authors/zoltan_borsos.jpg
+display_name: Borsi
+link: https://www.instagram.com/borsiz
 ---
