@@ -9,16 +9,21 @@ body {
     line-height: 1.2;
 }
 
+a {
+    color: salmon;
+}
+
 /* Typography */
 
 /* Main nav */
 
 .pad {
-    padding: 10px 20px;
+    padding: 2rem 4rem;
 }
 
 .main-nav {
     border-bottom: 1px dotted #ccc;
+    text-align: right;
 }
 
 .main-nav__link {
@@ -37,10 +42,16 @@ body {
 /* Header hero text */
 
 .hero {
-    font-size: 8em;
-    font-family: 'Marcellus', serif;
-    font-weight: 400;
+    font-size: 10em;
     text-decoration: underline;
+}
+
+.fancy {
+    /* font-family: 'Marcellus', serif; */
+    font-family: 'Space Mono', monospace;
+    letter-spacing: 0;
+    font-weight: 700;
+    font-style: italic;
 }
 
 /* Footer */
@@ -49,58 +60,57 @@ body {
     border-top: 1px dotted #ccc;
 }
 
-/* Design components */
+/* Gallery grid */
 
-.framed {
-    padding: 0.5rem;
-    border-radius: 6px;
-    border: 1px solid #eee;
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8rem;
 }
 
-.author-portrait {
-    border-radius: 50%;
-    overflow: hidden;
+.creation {
+    grid-row-end: span 2;
 }
 
-.portrait {
-    max-height: 100%;
+.featured {
+    grid-row-end: span 3;
+    grid-column-end: span 2;
 }
 
-.section:not(:last-of-type),
-.gallery > .container > .row:not(:last-of-type) {
-    border-bottom: 1px solid #e1e1e1;
+/* Gallery item */
+
+.frame {
+    display: block;
+    padding: 1rem;
+    background: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
 }
 
-.about {
-    background-color: #eee;
+.creation__meta {
+    padding: 2rem 1rem;
+    max-width: 30em;
 }
 
-.footer > p > a {
+.creation__title {
+    font-size: 1.5em;
+    margin-bottom: 1rem;
     text-decoration: none;
 }
 
-/* Layout */
-
-.heading,
-.about,
-.gallery > .container > .row {
-    padding-top: 2rem;
-}
-
-.gallery > .container > .row {
-    padding-bottom: 2rem;
-}
-
-.footer > p {
-    margin: 0.75rem;
+.creation__author {
+    text-align: right;
 }
 
 .author-portrait {
     margin: 0 1rem;
-    width: 100px;
-    height: 100px;
+    width: 4rem;
+    height: 4rem;
+    overflow: hidden;
 }
 
+.u-max-full-height {
+    max-height: 100%;
+}
 
 /* Bigger than 550 */
 @media (min-width: 550px) {}
@@ -110,11 +120,3 @@ body {
   
 /* Bigger than 1000 */
 @media (min-width: 1000px) {}
-
-/* For random order */
-
-.js-creation-container {
-    display: flex;
-    flex-direction: column;
-}
-
