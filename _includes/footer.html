@@ -6,15 +6,24 @@
     <div class="three columns">
 
       {%- if site.email -%}
-      <a href="mailto:{{ site.email }}">{{ site.email }}</a> <br>
+      <a href="mailto:{{ site.email }}">{{ site.email }}</a> |&nbsp; 
       {%- endif -%}
-      <a href="https://github.com/freegyes/MakingItRealm">
-        &lt; &gt;
-      </a>
+      <a href="https://github.com/freegyes/MakingItRealm">&lt; &gt;</a>
     </div>
 
-    <div class="four columns">
+    <div class="six columns">
       <p>{{- site.description | escape -}}</p>
+    </div>
+
+    <div class="three columns">
+      <p>Browse previous issues:</p>
+      <p>
+        {% for exhibition in site.exhibitions reversed %}
+          {% unless forloop.first %}
+            | <a href="/exhibitions/{{ exhibition.issue }}">{{ exhibition.issue }}</a> | 
+            {% endunless %}
+        {% endfor %}
+      </p>
     </div>
 
 </footer>
