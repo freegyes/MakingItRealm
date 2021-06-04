@@ -1,0 +1,22 @@
+<footer class="footer pad">
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+
+  <div class="row">
+
+    <div class="three columns">
+
+      {%- if site.email -%}
+      <a href="mailto:{{ site.email }}">{{ site.email }}</a> <br>
+      {%- endif -%}
+      <a href="https://github.com/freegyes/MakingItRealm">
+        &lt; &gt;
+      </a>
+    </div>
+
+    <div class="four columns">
+      <p>{{- site.description | escape -}}</p>
+    </div>
+
+</footer>
+
+<script src="/scripts/randomize.js"></script>
