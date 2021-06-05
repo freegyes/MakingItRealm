@@ -1,5 +1,5 @@
 ---
-# This is the template for an author.
+# This is the template for the creation.
 # Edit the content of the below lines after the colons.
 # Rename the file --> YYYY-MM-author_name.md
 # To make it work, you'll also need an image (or any other media).
