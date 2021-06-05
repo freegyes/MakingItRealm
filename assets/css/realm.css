@@ -63,7 +63,8 @@ a {
 .gallery {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 8rem;
+    row-gap: 4rem;
+    column-gap: 8rem;
 }
 
 .creation {
