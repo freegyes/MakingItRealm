@@ -8,9 +8,10 @@ layout: default
   <div class="row">
     <div class="ten columns">
       <h2>{{ author.display_name }}</h2>
-      <p>
-        {{ content }}
-      </p>
+
+      {{ content }}
+      
+      <p>Discover more about the author <a href="{{ author.link }}">here</a></p>
     </div>
     <div class="two columns">
       <img class="u-max-full-width"
@@ -42,10 +43,6 @@ layout: default
       {%- endfor -%}
     
       </div>
-  </div>
-
-  <div class="row">
-    <p>Discover more about the author <a href="{{ author.link }}">here</a></p>
   </div>
 
 </div>
