@@ -4,15 +4,11 @@
   <div class="row">
 
     <div class="three columns">
-
-      {%- if site.email -%}
-      <a href="mailto:{{ site.email }}">{{ site.email }}</a> |&nbsp; 
-      {%- endif -%}
-      <a href="https://github.com/freegyes/MakingItRealm">
-        &lt; &gt;
-      </a>
-      <br>
-      <a href="{{ "/code-of-conduct.html" | relative_url }}">Code Of Conduct</a>
+      <ul class="u-list-unstyled">
+        <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+        <li><a href="https://github.com/freegyes/MakingItRealm">&lt; &gt;</a></li>
+        <li><a href="{{ "/code-of-conduct.html" | relative_url }}">Code Of Conduct</a></li>
+      </ul>
     </div>
 
     <div class="six columns">

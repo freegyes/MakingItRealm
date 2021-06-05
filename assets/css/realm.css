@@ -13,8 +13,6 @@ a {
     color: salmon;
 }
 
-/* Typography */
-
 /* Main nav */
 
 .pad {
@@ -108,8 +106,16 @@ a {
     overflow: hidden;
 }
 
+/* Utilities */
+
 .u-max-full-height {
     max-height: 100%;
+}
+
+.u-list-unstyled {
+    list-style: none;
+	margin-left: 0;
+	padding-left: 0;
 }
 
 /* Bigger than 550 */
