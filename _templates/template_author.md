@@ -6,6 +6,7 @@
 portrait: /images/authors/author_name.jpg
 display_name: Author Display Name
 link: https://link.to.author
+layout: author
 ---
 
 Author introduction.
