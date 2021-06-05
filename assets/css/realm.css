@@ -1,3 +1,11 @@
+/* Variables for grid calculation */
+
+:root {
+    --grid-gap: 8rem;
+    --grid-calc-w: calc( 100% + var(--grid-gap));
+    --grid-calc-one: calc(var(--grid-calc-w) / 12);
+}
+
 /* Typography */
 
 body {
@@ -63,7 +71,7 @@ a {
 .gallery {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 8rem;
+    gap: var(--grid-gap);
 }
 
 .tall {
@@ -108,6 +116,75 @@ a {
     width: 4rem;
     height: 4rem;
     overflow: hidden;
+}
+
+/* Skeleton grid overrides */
+
+@media (min-width: 550px) {
+    .column,
+    .columns {
+        margin-left: var(--grid-gap);
+    }
+    .column:first-child,
+    .columns:first-child {
+        margin-left: 0;
+    }
+
+  .one.column,
+  .one.columns {
+      --without-gap: calc(var(--grid-calc-one) * 1);
+      width: calc(var(--without-gap) - var(--grid-gap));
+    }
+  .two.columns {
+      --without-gap: calc(var(--grid-calc-one) * 2);
+      width: calc(var(--without-gap) - var(--grid-gap));
+  }
+  .three.columns {
+      --without-gap: calc(var(--grid-calc-one) * 3);
+      width: calc(var(--without-gap) - var(--grid-gap));
+  }
+  .one-third.column,
+  .four.columns {
+      --without-gap: calc(var(--grid-calc-one) * 4);
+      width: calc(var(--without-gap) - var(--grid-gap));
+  }
+  .five.columns {
+      --without-gap: calc(var(--grid-calc-one) * 5);
+      width: calc(var(--without-gap) - var(--grid-gap));
+  }
+  .one-half.column,
+  .six.columns {
+      --without-gap: calc(var(--grid-calc-one) * 6);
+      width: calc(var(--without-gap) - var(--grid-gap));
+  }
+  .seven.columns {
+      --without-gap: calc(var(--grid-calc-one) * 7);
+      width: calc(var(--without-gap) - var(--grid-gap));
+  }
+  .two-thirds.column,
+  .eight.columns {
+      --without-gap: calc(var(--grid-calc-one) * 8);
+      width: calc(var(--without-gap) - var(--grid-gap));
+  }
+  .nine.columns {
+      --without-gap: calc(var(--grid-calc-one) * 9);
+      width: calc(var(--without-gap) - var(--grid-gap));
+  }
+  .ten.columns {
+      --without-gap: calc(var(--grid-calc-one) * 10);
+      width: calc(var(--without-gap) - var(--grid-gap));
+  }
+  .eleven.columns {
+      --without-gap: calc(var(--grid-calc-one) * 11);
+      width: calc(var(--without-gap) - var(--grid-gap));
+  }
+  .twelve.columns {
+      --without-gap: calc(var(--grid-calc-one) * 11);
+      width: calc(var(--without-gap) - var(--grid-gap));
+      margin-left: 0;
+  }
+
+  /* TODO Offsets */
 }
 
 /* Utilities */
