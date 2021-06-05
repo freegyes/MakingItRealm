@@ -1,0 +1,209 @@
+/* Variables for grid calculation */
+
+:root {
+    --grid-gap: 8rem;
+    --grid-calc-w: calc( 100% + var(--grid-gap));
+    --grid-calc-one: calc(var(--grid-calc-w) / 12);
+}
+
+/* Typography */
+
+body {
+    background-color: #f4f4f4;
+    color: #222;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 1.2;
+}
+
+a {
+    color: salmon;
+}
+
+/* Main nav */
+
+.pad {
+    padding: 2rem 4rem;
+}
+
+.main-nav {
+    border-bottom: 1px dotted #ccc;
+    text-align: right;
+}
+
+.main-nav__link {
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+    margin-right: 2em;
+}
+
+.main-nav__link:hover,
+.main-nav__link:focus {
+    color: black;
+    text-decoration: underline;
+}
+
+/* Header hero text */
+
+.hero {
+    font-size: 10em;
+    text-decoration: underline;
+}
+
+.fancy {
+    /* font-family: 'Marcellus', serif; */
+    font-family: 'Space Mono', monospace;
+    letter-spacing: 0;
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* Footer */
+
+.footer {
+    border-top: 1px dotted #ccc;
+}
+
+/* Gallery grid */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--grid-gap);
+}
+
+.tall {
+    grid-row-end: span 2;
+}
+
+.featured {
+    grid-row-end: span 2;
+    grid-column-end: span 2;
+}
+
+.featured.tall {
+    grid-row-end: span 3;
+}
+
+/* Gallery item */
+
+.frame {
+    display: block;
+    padding: 1rem;
+    background: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+.creation__meta {
+    padding: 2rem 1rem;
+    max-width: 30em;
+}
+
+.creation__title {
+    font-size: 1.5em;
+    margin-bottom: 1rem;
+    text-decoration: none;
+}
+
+.creation__author {
+    text-align: right;
+}
+
+.author-portrait {
+    margin: 0 1rem;
+    width: 4rem;
+    height: 4rem;
+    overflow: hidden;
+}
+
+/* Skeleton grid overrides */
+
+@media (min-width: 550px) {
+    .column,
+    .columns {
+        margin-left: var(--grid-gap);
+    }
+    .column:first-child,
+    .columns:first-child {
+        margin-left: 0;
+    }
+
+  .one.column,
+  .one.columns {
+      --without-gap: calc(var(--grid-calc-one) * 1);
+      width: calc(var(--without-gap) - var(--grid-gap));
+    }
+  .two.columns {
+      --without-gap: calc(var(--grid-calc-one) * 2);
+      width: calc(var(--without-gap) - var(--grid-gap));
+  }
+  .three.columns {
+      --without-gap: calc(var(--grid-calc-one) * 3);
+      width: calc(var(--without-gap) - var(--grid-gap));
+  }
+  .one-third.column,
+  .four.columns {
+      --without-gap: calc(var(--grid-calc-one) * 4);
+      width: calc(var(--without-gap) - var(--grid-gap));
+  }
+  .five.columns {
+      --without-gap: calc(var(--grid-calc-one) * 5);
+      width: calc(var(--without-gap) - var(--grid-gap));
+  }
+  .one-half.column,
+  .six.columns {
+      --without-gap: calc(var(--grid-calc-one) * 6);
+      width: calc(var(--without-gap) - var(--grid-gap));
+  }
+  .seven.columns {
+      --without-gap: calc(var(--grid-calc-one) * 7);
+      width: calc(var(--without-gap) - var(--grid-gap));
+  }
+  .two-thirds.column,
+  .eight.columns {
+      --without-gap: calc(var(--grid-calc-one) * 8);
+      width: calc(var(--without-gap) - var(--grid-gap));
+  }
+  .nine.columns {
+      --without-gap: calc(var(--grid-calc-one) * 9);
+      width: calc(var(--without-gap) - var(--grid-gap));
+  }
+  .ten.columns {
+      --without-gap: calc(var(--grid-calc-one) * 10);
+      width: calc(var(--without-gap) - var(--grid-gap));
+  }
+  .eleven.columns {
+      --without-gap: calc(var(--grid-calc-one) * 11);
+      width: calc(var(--without-gap) - var(--grid-gap));
+  }
+  .twelve.columns {
+      --without-gap: calc(var(--grid-calc-one) * 11);
+      width: calc(var(--without-gap) - var(--grid-gap));
+      margin-left: 0;
+  }
+
+  /* TODO Offsets */
+}
+
+/* Utilities */
+
+.u-max-full-height {
+    max-height: 100%;
+}
+
+.u-list-unstyled {
+    list-style: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+/* Bigger than 550 */
+@media (min-width: 550px) {}
+
+/* Bigger than 750 */
+@media (min-width: 750px) {}
+  
+/* Bigger than 1000 */
+@media (min-width: 1000px) {}

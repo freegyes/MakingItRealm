@@ -1,0 +1,48 @@
+---
+layout: default
+---
+{% assign author = site.authors | where:"path", page.path | first %}
+
+<div class="pad">
+
+  <div class="row">
+    <div class="ten columns">
+      <h2>{{ author.display_name }}</h2>
+
+      {{ content }}
+      
+      <p>Discover more about the author <a href="{{ author.link }}">here</a></p>
+    </div>
+    <div class="two columns">
+      <img class="u-max-full-width"
+      src="{{ author.portrait }}" 
+      alt="A portrait">
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="row">
+    <h4>Creations of {{ author.display_name }} at {{ site.title }}:</h4>
+    <div class="gallery">
+      {% assign creations_to_exhibit = site.creations | where:"author", page.path %}
+      {%- for creation in creations_to_exhibit -%}
+        <div class="creation js-creation">
+          <a class="frame" href="{{ creation.link }}">
+            <img class="u-max-full-width" 
+              src="{{ creation.image }}" 
+              alt="{{ creation.image_alt }}">
+          </a>
+          <div class="creation__meta">
+            <h2 class="creation__title fancy">{{ creation.title }}</h2>
+            
+            {{ creation.content }}
+    
+          </div>
+        </div>
+      {%- endfor -%}
+    
+      </div>
+  </div>
+
+</div>

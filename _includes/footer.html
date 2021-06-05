@@ -1,0 +1,37 @@
+<footer class="footer pad">
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+
+  <div class="row">
+
+    <div class="three columns">
+      <ul class="u-list-unstyled">
+        <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+        <li><a href="https://github.com/freegyes/MakingItRealm">&lt; &gt;</a></li>
+        <li><a href="{{ "/code-of-conduct.html" | relative_url }}">Code Of Conduct</a></li>
+      </ul>
+    </div>
+
+    <div class="six columns">
+      <ul class="u-list-unstyled">
+        <li>{{- site.description | escape -}}</li>
+        <li>Get notified about the next exhibition <a href="https://www.facebook.com/MakingItRealm">on this page</a>.</li>
+        <li>Would like to see your creation here? Join our community of creators <a href="https://www.facebook.com/groups/mircreators">here</a>.</li>
+      </ul>
+      <p></p>
+      <p></p>
+    </div>
+
+    <div class="three columns">
+      <p>Browse previous issues:</p>
+      <p>
+        {% for exhibition in site.exhibitions reversed %}
+          {% unless forloop.first %}
+            | <a href="/exhibitions/{{ exhibition.issue }}">{{ exhibition.issue }}</a> | 
+            {% endunless %}
+        {% endfor %}
+      </p>
+    </div>
+
+</footer>
+
+<script src="/scripts/randomize.js"></script>
