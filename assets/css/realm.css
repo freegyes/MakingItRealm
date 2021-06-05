@@ -48,8 +48,14 @@ a {
 /* Header hero text */
 
 .hero {
-    font-size: 10em;
+    font-size: 3em;
     text-decoration: underline;
+}
+
+@media (min-width: 550px) {
+   .hero {
+        font-size: 10em;
+    }
 }
 
 .fancy {
@@ -68,23 +74,25 @@ a {
 
 /* Gallery grid */
 
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: var(--grid-gap);
-}
-
-.tall {
-    grid-row-end: span 2;
-}
-
-.featured {
-    grid-row-end: span 2;
-    grid-column-end: span 2;
-}
-
-.featured.tall {
-    grid-row-end: span 3;
+@media (min-width: 900px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: var(--grid-gap);
+    }
+    
+    .tall {
+        grid-row-end: span 2;
+    }
+    
+    .featured {
+        grid-row-end: span 2;
+        grid-column-end: span 2;
+    }
+    
+    .featured.tall {
+        grid-row-end: span 3;
+    }
 }
 
 /* Gallery item */
