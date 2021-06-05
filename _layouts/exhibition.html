@@ -11,7 +11,7 @@ layout: default
   {% assign creations_to_exhibit = site.creations | where:"exhibition", page.issue %}
   {%- for creation in creations_to_exhibit -%}
     {% assign author = site.authors | where:"path", creation.author | first %}
-    <div class="creation js-creation">
+    <div class="creation js-creation {% if creation.tall %} tall {% endif %}">
       <a class="frame" href="{{ creation.link }}" target="_blank">
         <img class="u-max-full-width" 
           src="{{ creation.image }}" 
