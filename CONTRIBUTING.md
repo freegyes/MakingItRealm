@@ -10,7 +10,7 @@ This project and everyone participating in it is governed by the [Code of Conduc
 
 ## How Can I Contribute?
 
-### Contributing as a Creator 👩‍🎨
+### 👩‍🎨 Contributing as a Creator 
 
 🗓 **Make sure that your submission arrives by the first Saturday of the month, the latest**. Our current schedule sets the virtual exhibitions live on the first weekend of every month. 
 
@@ -30,11 +30,11 @@ This project and everyone participating in it is governed by the [Code of Conduc
 - Send a pull request with all your changes to the latest `issue-202X-XX` branch.
 - You are ready!
 
-### Contributing as a developer
+### 👩‍💻 Contributing as a developer 
 
 Use the `development` branch to branch off with your `feature-xxx` branch, and send the pull request to `development` when you're ready.
 
-### Reporting Bugs, Requesting Features and Discussing Ideas
+### 🐞 Reporting Bugs, Requesting Features and Discussing Ideas
 
 Bugs, requests and ideas are tracked as [GitHub issues](https://github.com/freegyes/MakingItRealm/issues) in this repository. Skim through the open issues, emote, comment, or feel free to open a new one.
 

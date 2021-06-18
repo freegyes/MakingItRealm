@@ -1,4 +1,7 @@
 # MakingItRealm
+
+## Contributing to the Making It Realm
+See [CONTRIBUTING.md](CONTRIBUTING.md).
 ## Development
 The site is running on [Jekyll](https://jekyllrb.com/). 
 
