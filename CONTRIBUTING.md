@@ -1,8 +1,8 @@
 # Contributing to the Making It Realm
 
-Thank you for taking the time to contribute! 🤗
+First of all, thank you for taking the time to contribute! 🤗
 
-The following is a set of guidelines for contributing to the [Making It Realm](https://www.makingitrealm.space/), both as a creator and as a developer. These are mostly guidelines, not rules. Use your best judgment, and feel free to propose changes to this document.
+The following is a set of guidelines for contributing to the [Making It Realm](https://www.makingitrealm.space/), both as a creator and as a developer. These are mostly guidelines, not strict rules. Use your best judgment, and feel free to propose changes to this document.
 
 ## Code of Conduct
 
@@ -10,15 +10,11 @@ This project and everyone participating in it is governed by the [Code of Conduc
 
 ## How Can I Contribute?
 
-### Contributing as a Creator
+### Contributing as a Creator 👩‍🎨
 
-Our current schedule sets the virtual exhibitions live on the first weekend of every month. **Make sure that your submission arrives by the first Saturday of the month, the latest**.
+🗓 **Make sure that your submission arrives by the first Saturday of the month, the latest**. Our current schedule sets the virtual exhibitions live on the first weekend of every month. 
 
-#### If You Feel Anxious When You Hear the Expression Pull Request 😃
-
-Just reach out to [hello@makingitrealm.space](mailto:hello@makingitrealm.space) and we'll help you set up your creation.
-
-#### Sending a Creation as a Pull Request
+**Note**: If you get anxious when you hear expressions like Forking, Branches and Pull Requests, just reach out to [hello@makingitrealm.space](mailto:hello@makingitrealm.space) and we'll help you set up your creation.
 
 - Fork the [Making It Realm repository](https://github.com/freegyes/MakingItRealm).
 - Create a new branch from the latest `issue-202X-XX` branch and name it `submission-202X-XX/author`.
