@@ -9,6 +9,7 @@ image: /images/2021-XX/2021-XX-author_name.jpg # replace dates and author_name
 image_alt: Describe what you can see on the image you uploaded.
 link: https://link.to.creation # can be an external link or can use the same link as the image does above
 exhibition: 2021-XX ## format: YYYY-MM
+tall: true # use this setting if your media is in portrait orientation to help the layout
 ---
 
 Tell the world about your creation. You can use markdown or html, whichever floats your boat.
