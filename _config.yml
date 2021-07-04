@@ -25,7 +25,7 @@ description: >- # this means to ignore newlines until the next variable
 callout-html: >- 
   Get notified about the next exhibition <a href="https://www.facebook.com/MakingItRealm">on this page</a>. <br />
   Would like to see your creation here? Join our community of creators <a href="https://www.facebook.com/groups/mircreators">here</a>. <br /><br />
-  Sponsored by the friendly creatures of <a href="https://unka.space" target="_blank">UNKA</a>.
+  <a href="https://plausible.io/makingitrealm.space" target="_blank">Privacy friendly analytics</a> is sponsored by the friendly creatures of <a href="https://unka.space" target="_blank">UNKA</a>.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: https://makingitrealm.space # the base hostname & protocol for your site, e.g. http://example.com
 
