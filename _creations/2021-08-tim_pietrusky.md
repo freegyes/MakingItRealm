@@ -1,7 +1,7 @@
 ---
 title: The Goddess of all dimensions will take you down
 author: _authors/tim_pietrusky.md
-image: /images/2021-05/2021-05-nerddisco.jpg
+image: /images/2021-08/2021-08-timpietrusky.jpg
 image_alt: Generated, distorted, blue eye from the goddess of all dimensions
 link: https://www.youtube.com/watch?v=wL28MYvqCP4
 exhibition: 2021-08
