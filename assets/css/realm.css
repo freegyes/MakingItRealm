@@ -102,6 +102,7 @@ a {
     padding: 1rem;
     background: white;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    text-align: center; /* Workaround for square featured images */
 }
 
 .creation__meta {
