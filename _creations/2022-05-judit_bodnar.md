@@ -2,7 +2,7 @@
 title: Bittersweet Journalistic Endeavors
 author: _authors/judit_bodnar.md
 image: /images/2022-05/2022-05-judit_bodnar.jpg
-image_alt: 
+image_alt: Two photos of Depeche Mode on concert
 link: https://24.hu/kultura/2022/05/27/andy-andrew-fletcher-depeche-mode-dave-gahan-martin-gore
 exhibition: 2022-05
 tall: 
