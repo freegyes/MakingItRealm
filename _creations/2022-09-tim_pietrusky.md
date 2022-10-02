@@ -3,7 +3,7 @@ title: Chiptune in the Jungle
 author: _authors/tim_pietrusky.md
 image: /images/2022-09/2022-09-tim_pietrusky.jpg
 image_alt: 
-link: 
+link: /images/2022-09/2022-09-tim_pietrusky.jpg
 exhibition: 2022-09
 tall: false 
 ---
