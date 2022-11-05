@@ -17,22 +17,24 @@ This project and everyone participating in it is governed by the [Code of Conduc
 **Note**: If you get anxious when you hear expressions like Forking, Branches and Pull Requests, just reach out to [hello@makingitrealm.space](mailto:hello@makingitrealm.space) and we'll help you set up your creation.
 
 - Fork the [Making It Realm repository](https://github.com/freegyes/MakingItRealm).
-- Create a new branch from the latest `issue-202X-XX` branch and name it `submission-202X-XX/author`.
+- Create a new branch from the latest `202X-XX` branch and name it `submission-202X-XX/author`.
 - Find the `_templates` folder and use the files inside as templates.
 - If you **already have an author file** in the repo:
-  - copy the [`template_creation.md`](https://raw.githubusercontent.com/freegyes/MakingItRealm/main/_templates/template_creation.md) file to the `_creations` folder and rename it to `YYYY-MM-your_name.md` (where the date is the past month, so when you submit for an exhibition that starts on the first weekend of June, add -05-),
-  - add an image for your creation to the `/images/202X-XX` folder as `202X-XX-author_name.jpg`,
-  - edit the contents of the template file and remove the initial comments.
+  - Copy the [`template_creation.md`](https://raw.githubusercontent.com/freegyes/MakingItRealm/main/_templates/template_creation.md) file to the `_creations` folder and rename it to `YYYY-MM-your_name.md`. The date should be the past month, so when you submit for an exhibition that starts on the first weekend of June, add `-05-`.
+  - Add an image for your creation to the `/images/202X-XX` folder as `202X-XX-author_name.jpg`. If the folder does not exist yet, create it.
+  - Edit the contents of the template file and remove the initial comments.
 - If **this is your first time** submitting: 
-  - copy the [`template_author.md`](https://raw.githubusercontent.com/freegyes/MakingItRealm/main/_templates/template_author.md) file to the `_authors` folder and rename it to `your_name.md`,
-  - add a portrait of yourself to the `/images/authors` folder as `your_name.jpg`,
-  - edit the contents of the template file and remove the initial comments.
-- Send a pull request with all your changes to the latest `issue-202X-XX` branch.
+  - Copy the [`template_author.md`](https://raw.githubusercontent.com/freegyes/MakingItRealm/main/_templates/template_author.md) file to the `_authors` folder and rename it to `your_name.md`.
+  - Add a portrait of yourself to the `/images/authors` folder as `your_name.jpg`.
+  - Edit the contents of the template file and remove the initial comments.
+- Send a pull request with all your changes to the latest `202X-XX` branch.
 - You are ready!
 
 ### 👩‍💻 Contributing as a developer 
 
-Use the `development` branch to branch off with your `feature-xxx` branch, and send the pull request to `development` when you're ready.
+If you are part of the core maintainer team, work in the master repository. If you are not, fork the [Making It Realm repository](https://github.com/freegyes/MakingItRealm) first.
+
+Use the `development` branch to branch off with your `feature-xxx` branch, and send the pull request to the master repository's `development` branch when you're ready.
 
 ### 🐞 Reporting Bugs, Requesting Features and Discussing Ideas
 
