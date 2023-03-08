@@ -1,4 +1,5 @@
 ---
-issue: 2022-12
-layout: exhibition
+layout: default
 ---
+
+{%- include closed_notice.html -%}

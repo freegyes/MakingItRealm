@@ -20,9 +20,7 @@
       <p>Browse previous issues:</p>
       <p>
         {% for exhibition in site.exhibitions reversed %}
-          {% unless forloop.first %}
             | <a href="/exhibitions/{{ exhibition.issue }}">{{ exhibition.issue }}</a> | 
-            {% endunless %}
         {% endfor %}
       </p>
     </div>

@@ -1,0 +1,33 @@
+<div class="pad">
+
+    <div class="row">
+      <div class="eight columns">
+        <h2>Making It Realm ran between 2021 and 2023.</h2>
+  
+        <p>It was a fun project with good people:
+            <ul>
+            {% for author in site.authors %}
+                    <li><a class="fancy" href="{{ author.url }}">{{ author.display_name }}</a></li>
+                    <div class="author-portrait u-pull-right">
+                        <img class="u-max-full-height"
+                          src="{{ author.portrait }}" 
+                          alt="A portrait">
+                      </div>
+            {% endfor %}
+            </ul>
+        </p>
+        
+      </div>
+      <div class="four columns">
+        <h4>Browse the virtual exhibitions:</h4>
+        <p>
+            <ul>
+            {% for exhibition in site.exhibitions reversed %}
+                <li><a href="/exhibitions/{{ exhibition.issue }}">{{ exhibition.issue }}</a></li>
+            {% endfor %}
+            </ul>
+        </p>
+      </div>
+    </div>
+
+</div>
